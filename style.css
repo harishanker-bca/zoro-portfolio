@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+body {
+    background-color: rgba(177, 216, 203, 0.6);
+    /* overflow-x: hidden; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+
+nav {
+    display: flex;
+    width: 85%;
+    margin-left: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* pseude class =======> selector:pseudp-class{property:value} */
+
+nav img {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+a {
+    text-decoration: none;
+
+    color: black;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+    background-color: rgb(33, 227, 46);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.title {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.title span {
+
+    color: rgb(33, 227, 46);
+}
+
+.title a {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: rgb(33, 227, 46);
+    padding: 5px;
+    margin-left: -1px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+.images {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    margin-left: 100px;
+    bottom: 0;
+    right: 40px;
+
+}
+
+.images img {
+    position: absolute;
+    height: 100%;
+    left: 10%;
+    transform: translateX(-10%);
+    bottom: 0;
+    transition: bottom 1s, left 6s;
+}
+
+.images #img1 {
+    height: 400px;
+    /* margin-top: -100px; */
+    /* opacity: 0; */
+    bottom: 100px;
+}
+
+
+.images:hover #img1 {
+    left: 100px;
+    /* opacity: 1; */
+
+}
+
+.images:hover #img2 {
+    bottom: 30px;
+    /* opacity: 0; */
+}
+
+
+#about {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.heading {
+    margin: 10px 40%;
+}
+
+.heading h2 {
+    font-size: 30px;
+    margin-left: -10px;
+}
+
+.heading span {
+    font-size: 20px;
+    color: rgb(33, 227, 46);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+}
+
+.about-text {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.info-box {
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+
+}
+
+.info-box span {
+    margin-left: 10px;
+}
+
+.about-img img {
+    width: 800px;
+    margin-left: -100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#skills {
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-right: 8%;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* align-items: center; */
+    margin-top: 2rem;
+
+
+}
+
+.skill-img {
+    width: 100%;
+
+    /* margin-left:620px ;   */
+}
+
+.skill-img img {
+    height: 500px;
+    margin-left: 400px;
+
+
+
+    /* margin-left:620px ;   */
+}
+
+.bar-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.info-box {}
+
+.bar-box h3,
+span {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.light-bar {
+    position: absolute;
+    
+    width: 100%;
+    height: .5rem;
+    background-color: aqua;
+}
+
+
+/* his code */
+
+.bars{
+    width: 100%;
+}
+.bar-box{
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0;
+    margin-bottom: 1rem;
+}
+
+.bar-box span,h3{
+    margin-bottom: 50px;
+}
+.light-bar{
+    background-color: green;
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    border-radius: 5px;
+}
+.percentage-bar{
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    
+}
+.hakki-bar{
+    width: 80%;
+}
+.nav-bar{
+    width: 0%;
+}
+.sword-bar{
+    width: 100%;
+}
+.react-bar{
+    width: 90%;
+}
+.iconDiv{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+/*  till here*/
+
+.icon:hover{
+    background-image: linear-gradient(black,green);
+}
+
+.icon i:hover{
+    color: purple;  
+    animation: dosomethingfor .5s;
+}
+
+@keyframes dosomethingfor{
+    50%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.skill-img img:hover{
+    color: purple;  
+    animation: dosomethingfor 1s;
+}
+
+@keyframes dosomethingfor{
+    60%{
+        transform: rotateY(360deg);
+    }
+   
+
+}
+
+.nav-bar:hover{
+  background-color: red;
+   animation: inc 1s;
+}
+@keyframes inc {
+    10%{
+        opacity: 0;
+    }
+}
+
+#arrow{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#arrow:hover{
+    animation: dosomethingfor 1s;
+}
